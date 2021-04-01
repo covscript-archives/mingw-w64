@@ -1,0 +1,1 @@
+http://covscript.org.cn/gcc-10.2.0-mingw-w64-8.0.0-r8-covscript.org.zip
