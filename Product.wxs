@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-    <Product Id="*" Name="MinGW-w64 Built By CovScript.ORG" Language="1033" Version="8.0.0-r8" Manufacturer="Covariant Script Organization" UpgradeCode="0249a4bd-27db-46bd-9063-25bd5f6a67b6">
+    <Product Id="*" Name="MinGW-w64 Built By CovScript.ORG" Language="1033" Version="8.0.0.8" Manufacturer="Covariant Script Organization" UpgradeCode="0249a4bd-27db-46bd-9063-25bd5f6a67b6">
         <Package Id="*" Keywords="MinGW-w64" Description="MinGW-w64" Platform="x64" InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
 
         <MajorUpgrade
@@ -10,7 +10,8 @@
 
         <Media Id="1" Cabinet="Cab1.cab" EmbedCab="yes" />
 
-        <Feature Id="MinGW-w64" Title="MinGW-w64 Built By CovScript.ORG" Level="1">
+        <Feature Id="MinGW_w64" Title="MinGW-w64 Built By CovScript.ORG" Level="1">
+            <ComponentRef Id="ApplicationShortcut" />
             <ComponentGroupRef Id="Package" />
         </Feature>
 
@@ -20,7 +21,6 @@
 
         <Directory Id="TARGETDIR" Name="SourceDir">
             <Directory Id="ProgramFilesFolder">
-                <Environment Id="PATH" Name="PATH" Value="[INSTALLDIR]mingw64\bin" Permanent="no" Part="last" Action="set" System="yes" />
                 <Directory Id="INSTALLDIR" Name="MinGW-w64 Built By CovScript.ORG" />
             </Directory>
         </Directory>
@@ -28,6 +28,10 @@
 
     <Fragment>
         <DirectoryRef Id="INSTALLDIR">
+            <Component Id="ApplicationShortcut" Guid="{1BDEED99-E5C9-41B5-AC6B-CB01BD2E14C9}">
+                <Environment Id="PATH" Name="PATH" Value="[INSTALLDIR]mingw64\bin" Permanent="no" Part="last" Action="set" System="yes" />
+                <RegistryValue Root="HKCU" Key="Software\[Manufacturer]\[ProductName]" Name="installed" Type="integer" Value="1" KeyPath="yes" />
+            </Component>
         </DirectoryRef>
     </Fragment>
 </Wix>
