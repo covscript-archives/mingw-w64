@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-    <Product Id="*" Name="MinGW-w64 Built By CovScript.ORG" Language="1033" Version="8.0.0.8" Manufacturer="Covariant Script Organization" UpgradeCode="0249a4bd-27db-46bd-9063-25bd5f6a67b6">
+    <Product Id="*" Name="MinGW-w64 Built By CovScript.ORG" Language="1033" Version="10.0.0.3" Manufacturer="Covariant Script Organization" UpgradeCode="0249a4bd-27db-46bd-9063-25bd5f6a67b6">
         <Package Id="*" Keywords="MinGW-w64" Description="MinGW-w64" Platform="x64" InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
 
         <MajorUpgrade
