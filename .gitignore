@@ -1,2 +1,6 @@
 mingw64/
 temp.wxs
+*.zip
+*.msi
+*.wixobj
+*.wixpdb
