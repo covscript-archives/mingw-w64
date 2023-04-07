@@ -1,8 +1,12 @@
 # Latest Release
-## gcc-12.2.0-mingw-w64-10.0.0-r4-patch1(12.2.0.1)
-http://covscript.org.cn/gcc-12.2.0-mingw-w64-10.0.0-r4-patch1-covscript.org.zip
+## gcc-12.2.0-mingw-w64ucrt-10.0.0-r5(12.2.0.2)
+http://covscript.org.cn/gcc-12.2.0-mingw-w64ucrt-10.0.0-r5-covscript.org.zip
 
-http://covscript.org.cn/gcc-12.2.0-mingw-w64-10.0.0-r4-patch1-covscript.org.msi
+http://covscript.org.cn/gcc-12.2.0-mingw-w64ucrt-10.0.0-r5-covscript.org.msi
+## gcc-12.2.0-mingw-w64-10.0.0-r4-patch1(12.2.0.1)
+https://github.com/covscript-archives/mingw-w64/releases/download/12.2.0.1/gcc-12.2.0-mingw-w64-10.0.0-r4-patch1-covscript.org.zip
+
+https://github.com/covscript-archives/mingw-w64/releases/download/12.2.0.1/gcc-12.2.0-mingw-w64-10.0.0-r4-patch1-covscript.org.msi
 # Previous Release
 ## gcc-12.2.0-mingw-w64-10.0.0-r4
 https://github.com/covscript-archives/mingw-w64/releases/download/gcc-12.2.0-mingw-w64-10.0.0-r4/gcc-12.2.0-mingw-w64-10.0.0-r4-covscript.org.zip
